@@ -8,3 +8,9 @@ body {
     background-color: blanchedalmond;
     padding: 50px;
 }
+
+li {
+    list-style: none;
+    border: 1px solid black;
+    padding: 4px;
+}

@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Index file "Home" for the site</h1>
-    
+    <a href="/new">Post a new message!</a>
+
     <p> <%= title %> </p>
 
     <ul>
@@ -16,6 +17,7 @@
             <%- include('message', { message: message }); %>
         <% }); %>
     </ul>
+
     
 
     <%- include('footer') %>

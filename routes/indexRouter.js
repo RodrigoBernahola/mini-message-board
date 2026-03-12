@@ -25,7 +25,8 @@ indexRouter.get("/new", (req, res) => {
 
 indexRouter.post("/new", (req, res) => {
     console.log(req.body);
-    messages.push({ text: messageText, user: messageUser, added: new Date() });
+    messages.push({ text: req.body.messageText, user: req.body.messageUser, added: new Date() });
+    res.redirect("/");
 })
 
 module.exports = indexRouter;
